@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Node / tooling caches (if used later)
+node_modules/
+.vercel/
+dist/
+out/

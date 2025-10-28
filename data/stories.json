@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Just the usual",
+    "quote": "For us, there are no good interactions with police.",
+    "summary": "A semi-final OzTag match turns into another police chase, showing how constant surveillance blocks young people from feeling safe in their own neighbourhood.",
+    "tags": ["Policing", "Safety"],
+    "page": 12,
+    "image": "assets/page-12.png"
+  },
+  {
+    "title": "I can’t even walk down the street",
+    "quote": "Anytime we’re anywhere we have our escape routes planned in case we need to run.",
+    "summary": "From childhood, police harassment engrains fear and trauma, pushing kids into fight-or-flight on everyday walks through Mount Druitt.",
+    "tags": ["Policing", "Trauma"],
+    "page": 13,
+    "image": "assets/page-13.png"
+  },
+  {
+    "title": "Another overnighter",
+    "quote": "The police say things to me to get me to bite back at them. Real racist things.",
+    "summary": "Bail refusals, racist taunts and impossible conditions keep young people trapped in cycles of overnight custody.",
+    "tags": ["Justice", "Bail"],
+    "page": 16,
+    "image": "assets/page-16.png"
+  },
+  {
+    "title": "Here we go again, same shit every day",
+    "quote": "You shouldn’t have to go into custody to learn about culture, but it’s the only chance you get.",
+    "summary": "Life on remand is isolating and institutionalising, yet the only consistent access to culture and Elders happens inside detention.",
+    "tags": ["Custody", "Culture"],
+    "page": 18,
+    "image": "assets/page-18.png"
+  },
+  {
+    "title": "Where’s our support?",
+    "quote": "We need more people who give a fuck and actually ask what we want.",
+    "summary": "After-hours support is missing, leaving young people without safe spaces, stable housing, or workers who stick around.",
+    "tags": ["Support", "Housing"],
+    "page": 20,
+    "image": "assets/page-20.png"
+  },
+  {
+    "title": "Taught us how to read and white",
+    "quote": "If teachers didn’t care enough to try with us, then no one else would.",
+    "summary": "Racism in classrooms pushes students out, while meaningful cultural learning is the reason they want to stay.",
+    "tags": ["Education", "Belonging"],
+    "page": 22,
+    "image": "assets/page-22.png"
+  },
+  {
+    "title": "Just another way to harass us",
+    "quote": "They give me another fine to add to my fines; it’s a power trip for them.",
+    "summary": "Transport checks and relentless fines keep stacking debt that blocks licences, jobs, and a clean slate.",
+    "tags": ["Policing", "Fines"],
+    "page": 27,
+    "image": "assets/page-27.png"
+  },
+  {
+    "title": "Koori Court is probably the best thing I know",
+    "quote": "In Youth Koori Court they actually see the effort you’re making.",
+    "summary": "Youth Koori Court centres Elders, culture, and relationships, giving young people a real shot at change.",
+    "tags": ["Justice", "Culture"],
+    "page": 29,
+    "image": "assets/page-29.png"
+  },
+  {
+    "title": "Can’t hold us down",
+    "quote": "Imagine reconnecting with your blood brothers after being in care for so long, and it’s in jail.",
+    "summary": "Mounty Yarns grows from lived experience—building community-run solutions that keep families together.",
+    "tags": ["Community", "Care"],
+    "page": 31,
+    "image": "assets/page-31.png"
+  }
+]

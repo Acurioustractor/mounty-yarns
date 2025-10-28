@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounty Yarns</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <span class="logo-mark">Mounty Yarns</span>
+      <p class="tagline">Stories and solutions from Aboriginal young people in Mount Druitt</p>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="#home">Home</a>
+      <a href="#mission">Our Why</a>
+      <a href="#stories">Stories</a>
+      <a href="#report">Read the Report</a>
+      <a href="#action">Take Action</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Mounty Yarns: lived experiences reshaping justice</h1>
+        <p>
+          Mounty Yarns amplifies thirteen lived-experience stories and the collective solutions shared
+          by Aboriginal young people to create a safer, fairer future for Mount Druitt.
+          Explore the full report, listen to the voices behind the movement, and help back the change.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://www.youtube.com/watch?v=Bni2BDutOgo" target="_blank" rel="noopener">
+            Watch the feature film
+          </a>
+          <a class="btn secondary" href="Mounty+Yarns.pdf" download>
+            Download the PDF
+          </a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/Bni2BDutOgo"
+                  title="Mounty Yarns feature film"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">
+          Feature film spotlighting Mount Druitt young people leading systemic change.
+        </p>
+      </div>
+    </section>
+
+    <section class="mission" id="mission">
+      <div class="mission-copy">
+        <h2>Standing on Country, carrying future generations</h2>
+        <p>
+          Mounty Yarns honours the Darug people and the many Nations who call Mount Druitt home.
+          The report celebrates the resilience, wisdom, and leadership of young Aboriginal people who are
+          rewriting the story of justice in their community.
+        </p>
+        <p>
+          This digital experience keeps the stories dynamic. It is built to grow with new yarns, fresh artwork,
+          and updates on the pathways for change our community is building together.
+        </p>
+      </div>
+      <ul class="mission-highlights">
+        <li>
+          <h3>Grounded in story</h3>
+          <p>Thirteen lived-experience yarns map the daily realities of navigating harmful systems.</p>
+        </li>
+        <li>
+          <h3>Guided by solutions</h3>
+          <p>Pathways for change unite justice, education, health, and community-powered support.</p>
+        </li>
+        <li>
+          <h3>Built to evolve</h3>
+          <p>Search, explore, and extend the knowledge base as more stories and updates emerge.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="story-highlights" id="stories">
+      <div class="section-heading">
+        <h2>Hear the voices behind the yarns</h2>
+        <p>Explore standout quotes, artwork, and reflections from across the report. Add new stories at any time.</p>
+      </div>
+      <div id="story-grid" class="story-grid" aria-live="polite"></div>
+      <div class="story-controls">
+        <button class="btn tertiary" id="shuffle-quotes">Shuffle quotes</button>
+        <button class="btn tertiary" id="reset-quotes">Reset</button>
+      </div>
+    </section>
+
+    <section class="report-viewer" id="report">
+      <div class="section-heading compact">
+        <h2>Read the full Mounty Yarns report</h2>
+        <p>
+          Browse every page, search across the text, or jump to key sections. All images and artwork are preserved from the original PDF.
+        </p>
+      </div>
+      <div class="viewer-shell">
+        <aside class="viewer-rail">
+          <div class="search">
+            <label for="report-search" class="sr-only">Search the report</label>
+            <input id="report-search" type="search" placeholder="Search the report…">
+            <button id="clear-search" class="icon-button" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div id="search-results" class="search-results" aria-live="polite"></div>
+          <div class="toc">
+            <h3>Jump to section</h3>
+            <ul id="toc-list"></ul>
+          </div>
+        </aside>
+        <article class="viewer-stage">
+          <header class="stage-header">
+            <button class="btn tertiary" id="prev-page" type="button" aria-label="Previous page">Previous</button>
+            <div class="page-indicator" id="page-indicator">Page 1</div>
+            <button class="btn tertiary" id="next-page" type="button" aria-label="Next page">Next</button>
+          </header>
+          <div id="page-scroller" class="page-scroller"></div>
+        </article>
+      </div>
+      <p class="download-inline">
+        Prefer the original layout? <a href="Mounty+Yarns.pdf" download>Download the PDF</a>.
+      </p>
+    </section>
+
+    <section class="updates" id="updates">
+      <div class="section-heading compact">
+        <h2>Pathways for change</h2>
+        <p>These priorities come straight from the Mounty Yarns report. Jump into each focus area to read every recommendation.</p>
+      </div>
+      <div id="updates-list" class="updates-list" aria-live="polite"></div>
+      <form id="update-form" class="update-form" novalidate>
+        <h3>Submit a new story or update</h3>
+        <div class="field">
+          <label for="update-title">Title</label>
+          <input id="update-title" name="title" type="text" required placeholder="Headline for the yarn or update">
+        </div>
+        <div class="field">
+          <label for="update-summary">Summary</label>
+          <textarea id="update-summary" name="summary" rows="3" required placeholder="Short summary (max 500 characters)"></textarea>
+        </div>
+        <div class="field">
+          <label for="update-link">Link (optional)</label>
+          <input id="update-link" name="link" type="url" placeholder="https://example.org">
+        </div>
+        <button class="btn primary" type="submit">Add update</button>
+        <p class="form-hint">Entries stay local in this prototype. Hook the form into your CMS or database when you’re ready.</p>
+      </form>
+    </section>
+
+    <section class="call-to-action" id="action">
+      <div class="section-heading compact">
+        <h2>Back the Mounty Yarns movement</h2>
+        <p>Support, invest, and partner with the young people leading transformation in Mount Druitt.</p>
+      </div>
+      <div class="action-grid">
+        <article>
+          <h3>1. Support young people in community</h3>
+          <p>Invest in youth-led cultural programs, healing spaces, and dedicated mentors embedded in Mount Druitt.</p>
+          <ul>
+            <li>Provide funding or in-kind resources to the youth service working group.</li>
+            <li>Share cultural, legal, health, or creative expertise to strengthen on-Country support.</li>
+            <li>Volunteer or partner on events that celebrate Aboriginal excellence in Mount Druitt.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>2. Justice</h3>
+          <p>Transform policing, courts, and detention through Aboriginal-designed accountability and healing.</p>
+          <ul>
+            <li>Scale the Youth Koori Court model and improve police-community partnerships.</li>
+            <li>Ensure every justice process is trauma-informed and centred on cultural safety.</li>
+            <li>Share data transparently so young people can shape the services meant for them.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>3. Education &amp; learning</h3>
+          <p>Make schools places where Aboriginal young people are welcomed, seen, and supported.</p>
+          <ul>
+            <li>Bring language, culture, and local histories into every classroom.</li>
+            <li>Resource supports after hours, not just during school time.</li>
+            <li>Remove cost barriers to sport, excursions, and cultural activities that keep kids connected.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h4>Mounty Yarns</h4>
+      <p>Lived experiences of Aboriginal young people in Mt Druitt.</p>
+    </div>
+    <div>
+      <h4>Stay connected</h4>
+      <p>Contact the Mounty Yarns team via <a href="mailto:mtdruittinfo@justreinvest.org.au">mtdruittinfo@justreinvest.org.au</a></p>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="Mounty+Yarns.pdf" download>Download the PDF</a></li>
+        <li><a href="https://www.youtube.com/watch?v=HHoGegX1lDk" target="_blank" rel="noopener">Watch the feature film</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>
