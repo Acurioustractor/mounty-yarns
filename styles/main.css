@@ -139,6 +139,26 @@ a {
   width: 60%;
 }
 
+.nav-button {
+  background: var(--accent);
+  color: white !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 24px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-button::after {
+  display: none !important;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  background: var(--accent-dark);
+  color: white !important;
+  transform: translateY(-1px);
+}
+
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -758,6 +778,14 @@ a {
   .site-nav a {
     color: inherit;
     font-size: 1.1rem;
+  }
+
+  .nav-button {
+    background: var(--accent);
+    color: white !important;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.2rem !important;
   }
 
   .nav-toggle {
