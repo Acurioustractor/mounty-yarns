@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounty Place - Youth-led Space Activation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .place-hero {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+      padding: 4rem clamp(1rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    .place-hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin: 0 0 1rem;
+      line-height: 1.1;
+    }
+
+    .place-hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .content-section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem clamp(1rem, 4vw, 3rem);
+    }
+
+    .content-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      margin: 0 0 1.5rem;
+      color: var(--ink);
+    }
+
+    .content-section h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      color: var(--ink);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .intro-card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+    }
+
+    .intro-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .success-list {
+      background: var(--highlight);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      margin: 2rem 0;
+    }
+
+    .success-list h3 {
+      margin-top: 0;
+    }
+
+    .success-list ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .success-list li {
+      margin: 0.75rem 0;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .pillar-card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--accent);
+    }
+
+    .pillar-card h4 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .pillar-card ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    .pillar-card li {
+      margin: 0.5rem 0;
+    }
+
+    .timeline {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+      margin: 2rem 0;
+    }
+
+    .timeline-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-item:last-child {
+      border-bottom: none;
+    }
+
+    .timeline-week {
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .video-embed {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+    }
+
+    .video-embed iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: var(--radius-sm);
+    }
+
+    .cta-section {
+      background: var(--card-bg);
+      padding: 3rem clamp(1rem, 4vw, 3rem);
+      margin: 3rem 0 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .bg-alternate {
+      background: var(--bg);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <a href="index.html" class="logo-mark">Mounty Yarns</a>
+      <p class="tagline">Stories and solutions from Aboriginal young people in Mount Druitt</p>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#mission">Our Why</a>
+      <a href="mounty-place.html">Mounty Place</a>
+      <a href="index.html#action">Take Action</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="place-hero">
+      <h1>Mounty Place</h1>
+      <p>A youth-led workshop, studio, and gathering space on Darug Country where young people lead, make, and decide.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Why activate the back lot</h2>
+      <p>
+        Mounty Yarns is a grassroots, youth-led justice reinvestment effort in Mount Druitt on Darug Country.
+        Local Aboriginal young people began gathering and sharing lived-experience stories to shift how their
+        community is seen and how support is designed. Now they're creating a physical home base where youth
+        voice, culture, and creative practice become pathways to safety and real alternatives to detention.
+      </p>
+
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/Bni2BDutOgo"
+          title="Mounty Yarns feature film"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-card">
+          <h3>Youth-led space to host, make, and decide</h3>
+          <p>
+            A practical home base where young people chair sessions, set engagement principles, and run
+            programs with adults in support roles, not steering. This matches Mounty's stance of youth
+            leadership, care first, and evidence without bureaucracy.
+          </p>
+        </div>
+
+        <div class="intro-card">
+          <h3>From showcase to co-making</h3>
+          <p>
+            The container and yard become a live "learn-by-doing" site, turning interests into micro-tasks,
+            paid roles, and progression pathways. Test enterprises like the bike repair shop.
+          </p>
+        </div>
+
+        <div class="intro-card">
+          <h3>Safety and consent you can see</h3>
+          <p>
+            Clear duty-of-care, heat and electrical controls, and a visible stop-work poster build trust
+            with youth, families, and neighbours.
+          </p>
+        </div>
+
+        <div class="intro-card">
+          <h3>Evidence that matters</h3>
+          <p>
+            Simple session-by-session indicators - Belonging, Safety, Voice, Skill, Stewardship - to keep
+            the story credible and guide improvement over weeks, not just at the end.
+          </p>
+        </div>
+
+        <div class="intro-card">
+          <h3>Narrative shift with place</h3>
+          <p>
+            Activating the block behind the office makes the work visible and welcoming. It anchors
+            partnerships and gives policy-makers and supporters something concrete to visit, staffed and
+            stewarded by youth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-alternate">
+      <h2>What success looks like in the first 6 weeks</h2>
+
+      <div class="success-list">
+        <h3>Site alive</h3>
+        <p>Shade, seating, hydration, quiet corner, and safe temporary power running. Youth hosts lead tours and inductions.</p>
+      </div>
+
+      <div class="success-list">
+        <h3>Programs moving</h3>
+        <p>Three job cards in use end-to-end across Audio, Visuals, Build, or Events. One youth-run demo ("Own the Room") scheduled.</p>
+      </div>
+
+      <div class="success-list">
+        <h3>Paid progression</h3>
+        <p>Crew roles with a clear ladder toward stream lead, with transport stipends and snacks removing barriers.</p>
+      </div>
+
+      <div class="success-list">
+        <h3>Credible measurement and share-backs</h3>
+        <p>Two pulses logged, one Most Significant Change story chosen by youth, and a fortnightly recap approved through cultural and safeguarding checks.</p>
+      </div>
+
+      <div class="success-list">
+        <h3>Funding in motion</h3>
+        <p>Three prospects active across local service, CSR, and council to underwrite wages, materials, and insurance.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Key focus areas</h2>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <h4>Site & Safety</h4>
+          <ul>
+            <li>Accessibility: 1.2m clear paths, seated-height work surfaces, quiet corner</li>
+            <li>Heat thresholds: Sessions capped at 60-90 mins when >32°C</li>
+            <li>Electrical controls: RCD testing, cable protection, licensed work only</li>
+            <li>First-aid kit, hydration plan, stop-work triggers posted</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <h4>Safeguarding & Consent</h4>
+          <ul>
+            <li>Working With Children Checks for all adults</li>
+            <li>Two-adult supervision rule</li>
+            <li>Consent wristbands: Red (no images), Amber (internal), Green (public)</li>
+            <li>Incident response flow clearly posted</li>
+            <li>Critical incident pack in container</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <h4>Roles & Progression</h4>
+          <ul>
+            <li>90-day ladder: Crew → Crew lead → Stream lead → Site host</li>
+            <li>Transport stipends and meals provided</li>
+            <li>Youth crew leads and hosts identified</li>
+            <li>Maker streams: Audio, Visuals, Build, Events</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <h4>Programs & Making</h4>
+          <ul>
+            <li>Week 1: Open day tours, inductions, safety baseline</li>
+            <li>Week 3: Maker Sprint 1 with tradie mentor</li>
+            <li>Events stream plans pop-up activities</li>
+            <li>Bike repair shop test enterprise</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <h4>Measurement & Evidence</h4>
+          <ul>
+            <li>5 indicators: Belonging, Safety, Voice, Skill, Stewardship</li>
+            <li>Two-minute check-out card each session</li>
+            <li>Participation KPIs: % youth-chaired sessions</li>
+            <li>Fortnightly data sharing on Wednesdays</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <h4>Comms & Narrative</h4>
+          <ul>
+            <li>Youth author → Safeguarding → Cultural check → Publish</li>
+            <li>Youth editorial slot each fortnight</li>
+            <li>De-identify by default unless Green consent</li>
+            <li>4-6 photos + 60-second update to partners</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-alternate">
+      <h2>First working bee plan</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-week">First Working Bee (TBC - Monday 24th November or Tuesday 9th December)</div>
+          <ul>
+            <li>Sandstone pick up</li>
+            <li>Rubbish clean up</li>
+            <li>Move container closer to fence</li>
+            <li>Create Mounty room from the ConX room</li>
+            <li>Consider minimal viable product for front room (bike repair?)</li>
+            <li>Air conditioning installation</li>
+            <li>Shade options setup</li>
+            <li>Land flattening, mowing, general cleanup</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-week">Week 1</div>
+          <ul>
+            <li>Open Day tours and sign-ups</li>
+            <li>Inductions and safety baseline</li>
+            <li>Power in, lighting in, softening the room</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-week">Week 3</div>
+          <ul>
+            <li>Maker Sprint 1: fit-out micro-tasks with tradie mentor</li>
+            <li>Events stream drafts pop-up plan</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-week">Fortnightly Check-ins</div>
+          <ul>
+            <li>Share-back sessions every Wednesday</li>
+            <li>Review measurement data and youth-selected stories</li>
+            <li>Adjust plans based on feedback</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>The bigger picture</h2>
+      <p style="font-size: 1.1rem; line-height: 1.7;">
+        Mounty Yarns' activation is a practical next step in their long-term push: invest in young people and
+        culture, not custody. By turning the back lot into a youth-run workshop, studio, and gathering space,
+        they demonstrate how small, consistent investments in belonging, skill, and stewardship can change
+        trajectories and make a compelling case for justice dollars to follow community-led practice.
+      </p>
+    </section>
+
+    <section class="cta-section">
+      <h2>Get involved</h2>
+      <p>Support, invest, and partner with the young people leading transformation in Mount Druitt.</p>
+
+      <div class="cta-buttons">
+        <a class="btn primary" href="https://www.justreinvest.org.au/community/mt-druitt/" target="_blank" rel="noopener">
+          Learn about JustReinvest Mt Druitt
+        </a>
+        <a class="btn secondary" href="mailto:mtdruittinfo@justreinvest.org.au">
+          Contact the team
+        </a>
+        <a class="btn secondary" href="index.html#action">
+          Ways to support
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h4>Mounty Yarns</h4>
+      <p>Lived experiences of Aboriginal young people in Mt Druitt.</p>
+    </div>
+    <div>
+      <h4>Stay connected</h4>
+      <p>Contact the Mounty Yarns team via <a href="mailto:mtdruittinfo@justreinvest.org.au">mtdruittinfo@justreinvest.org.au</a></p>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="Mounty+Yarns.pdf" download>Download the PDF</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Bni2BDutOgo" target="_blank" rel="noopener">Watch the feature film</a></li>
+        <li><a href="https://www.justreinvest.org.au/community/mt-druitt/" target="_blank" rel="noopener">JustReinvest Mt Druitt</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
